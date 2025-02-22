@@ -101,7 +101,7 @@ const coversationLoop = async() => {
         addBotMessage("Goodbye! Thanks for chatting.");
         return;
     }else if(followUp.toLowerCase() === "continue"){
-        conversationLoop();
+        await conversationLoop();
     } 
     else{
         addBotMessage("I will take that as a no. Goodbye! Thanks for chatting.");
