@@ -4,6 +4,7 @@ const FORTUNE_URL = 'http://127.0.0.1:5000/fortune';
 const messageInput = document.querySelector(".message-input");
 const chatBody = document.querySelector(".chat-body");
 
+// WORKS
 // Utility function to create and append a message element
 const createMessageElement = (content, ...classes) => {
     const div = document.createElement("div");
