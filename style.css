@@ -154,10 +154,9 @@ section {
 }
 
 .home-content p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
     line-height: 1.8;
-    padding-bottom: 3rem;
 }
 
 .home-img img {
