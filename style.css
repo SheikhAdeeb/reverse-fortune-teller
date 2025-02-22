@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins";
+}
+
+:root {
+    /* background color */
+    --bg-color: #1c002e;
+    /* second background color */
+    --second-bg-color: #101010;
+    --text-color: white;
+    --main-color: #EE82EE;
+}
+
+html {
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+body{
+    /* setting the background color */
+    background: var(--bg-color);
+    /* setting the text color */
+    color: var(--text-color);
+}
+
+.header{
+    /* header should stay at top always */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* paddings on the sides */
+    padding: 4rem 15%;
+
+    /* setting the background color to transparent  and using blur effect to make glass effect*/
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+
+    /* making it a flex container */
+    display: flex;
+    /* All available spaces between the items */
+    justify-content: space-between;
+    /* horizontally aligning them */
+    align-items: center;
+    /* header stays at top */
+    z-index: 10000;
+}
+#menu-icon{
+    font-size: 3.5rem;
+    color: var(--main-color);
+    display: none;
+}
+.logo{
+   font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+
+    /* its clickable */
+    cursor: pointer;
+    /* smoother transition */
+    transition: 0.3s ease-in-out;
+}
+/* making the logo a little bigger while hovering over the logo */
+.logo:hover{
+    transform: scale(1.1);
+}
+
+/* for gradient effect */
+span{
+    background: linear-gradient(
+        /* from top color to bottom gradiant and 270deg means (270 degrees) left to right*/
+        270deg,
+        #D8BFD8 10%,
+        #EE82EE 100%
+    );
+    /* clipping the text to the background */
+    background-clip: text;
+
+    /* so we can see through the text */
+    color: transparent;
+}
+.navbar a{
+    font-size: 2.5rem;
+    color: var(--text-color);
+    margin: 9rem 10rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    border-bottom: 3px solid transparent;
+}
+.navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+.gradient-btn {
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    background: linear-gradient(
+        270deg,
+        #D8BFD8 10%,
+        #EE82EE 100%
+    );
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    color: white;
+    border: none;
+    text-wrap: nowrap;
+}
+.gradient-btn:hover{
+    transform: scale(1.05);
+
+}
+
+/* home contents */
+section{
+    min-height: 100vh;
+    padding: 10rem 15%;
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+}
+.home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;  
+}
+.home-content h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    line-height: 1;
+}
+
+.home-content h3 {
+    margin: 1rem 0;
+    font-size: 3rem;
+}
+
+.home-content p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.8;
+}
+.home-img img{
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(--main-color);
+    transition: o.4s ease-in-out;
+}
+.home-img img:hover{
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color),
+                0 0 100px var(--main-color);
+}
+.btn-group{
+    display: flex; 
+    gap: 3rem; 
+}
+.btn{
+    font-size: 2rem;
+    display: inline-block;
+    padding: 2rem 7rem;
+    background-color: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+    border-radius: 3rem;
+    font-size: 20;
+    color: black;
+    border: 2px solid transparent;
+    font-weight: 900;
+    transition: 0.3s ease-in-out;
+}
+.btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--main-color),
+                0 0 50px var(--main-color);
+}
