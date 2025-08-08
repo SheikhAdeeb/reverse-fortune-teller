@@ -1,8 +1,3 @@
-# React + Vite
+# Reverse Fortune Teller
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A Reverse Fortune Teller is like a regular fortune teller, but instead of predicting your future, it reveals your questionable past, with a darkly humorous and slightly mean twist. It’s the perfect mix of brutal honesty and bad luck, wrapped in a game that forces you to laugh at your own missteps because let’s face it, your past is way funnier in hindsight.
